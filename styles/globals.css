@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: Monoisome;
+    src: url(/Monoisome-Regular.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Monoisome';
+}
+
+h1 {
+    color: #EEEEEE;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+body {
+    background-color: #1C658C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.money {
+    width: 388px;
+}
+
+.equal {
+    font-weight: border;
+    font-size: 40px;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+}
+
+.currency select {
+    color: #EEEEEE;
+    border-radius: 10px;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #D8D2CB;
+    background-color: #398AB9;
+    font-size: 16px;
+}
+
+.currency input {
+    font-size: 24px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.equal {
+    color: #EEEEEE;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+}
